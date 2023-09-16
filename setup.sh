@@ -1,10 +1,10 @@
-#!/us/bin/env bash
+#!/usr/bin/env bash
 
 # exit when any command fails
-set o errexit
+set -o errexit
 
-# install dependencies via pip
-pip3 install -r dependencies
+## Install dependencies via pip
+pip install -r dependencies.txt
 
-# Run migration just in case
-python3 manage.py migrate
+## Run migration just in case
+python manage.py migrate
