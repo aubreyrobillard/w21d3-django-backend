@@ -1,4 +1,4 @@
-#!.us.bin.env bash
+#!/us/bin/env bash
 
 # exit when any command fails
 set o errexit
